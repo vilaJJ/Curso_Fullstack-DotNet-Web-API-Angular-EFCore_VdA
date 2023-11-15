@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ProEventos.API.Data;
@@ -9,11 +8,11 @@ namespace ProEventos.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class EventoController : ControllerBase
+    public class EventosController : ControllerBase
     {
-        public EventoController(DataContext context)
+        public EventosController(DataContext context)
         {
-            this._context = context;
+            _context = context;
         }
 
         private readonly DataContext _context;
